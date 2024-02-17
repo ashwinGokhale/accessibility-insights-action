@@ -14,7 +14,7 @@
         "start": "node scripts/run-locally.js",
         "test": "jest --rootDir src",
         "watch:test": "jest --watch",
-        "test:e2e": "concurrently \"npm --prefix ../../dev/website-hashroute start\" \"jest --rootDir e2e --coverage false\" --kill-others",
+        "test:e2e": "concurrently \"npm --prefix ../../dev/website-hashroute start\" \"jest --rootDir e2e --coverage false\" --kill-others --success first",
         "docs": "node scripts/documentation.js && prettier --write \"../../docs/ado-extension-inputs.md\""
     },
     "repository": {
