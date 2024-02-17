@@ -8,17 +8,17 @@ import InnerPage from './Linked1/InnerPage';
 import Linked2 from './Linked2/Linked2';
 
 function App() {
-  return (
-    <Router base="/" hashType="noslash">
-      <Switch>
-        <Route path="/home" component={Home} />
-        <Route path="/linked1" component={Linked1} />
-        <Route path="/linked2" component={Linked2} />
-        <Route path="/innerpage" component={InnerPage} />
-        <Route path="/" component={Home} />
-      </Switch>
-    </Router>
-  );
+    return (
+        <Router base="/" hashType="noslash">
+            <Switch>
+                <Route path="/home" component={Home} />
+                <Route path="/linked1" component={Linked1} />
+                <Route path="/linked2" component={Linked2} />
+                <Route path="/innerpage" component={InnerPage} />
+                <Route path="/" component={Home} />
+            </Switch>
+        </Router>
+    );
 }
 
 export default App;
