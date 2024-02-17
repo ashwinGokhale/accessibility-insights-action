@@ -203,6 +203,15 @@ describe('Sample task tests', () => {
         expect(testSubject.stdOutContained('8 failure instances')).toBeTruthy();
     });
 
+    it('should crawl and scan hash route applications', () => {
+        inputs = {
+            url: 'http://localhost:3000',
+            keepUrlFragment: 'true',
+        };
+
+        runTestWithInputs(inputs);
+    });
+
     function runTestWithInputs(inputs?: { [key: string]: string }): ttm.MockTestRunner {
         const compiledSourcePath = path.join(__dirname, 'mock-test-runner.js');
         const testSubject: ttm.MockTestRunner = new ttm.MockTestRunner(compiledSourcePath, inputs);
