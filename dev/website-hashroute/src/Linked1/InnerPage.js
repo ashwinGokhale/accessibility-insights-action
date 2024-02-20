@@ -4,6 +4,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
+// InnerPage component having intentional image-alt accessibility failures for the test app.
 const InnerPage = () => {
     return (
         <div>

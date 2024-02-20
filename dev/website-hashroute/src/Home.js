@@ -5,6 +5,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import image from './img1.png';
 
+// Home page of test app having multiple intentional accessibility failures for testing.
 const Home = () => {
     return (
         <div>

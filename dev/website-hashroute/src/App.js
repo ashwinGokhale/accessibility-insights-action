@@ -7,6 +7,7 @@ import Linked1 from './Linked1/Linked1';
 import InnerPage from './Linked1/InnerPage';
 import Linked2 from './Linked2/Linked2';
 
+// Hash routing used in the test app is declared here.
 function App() {
     return (
         <Router base="/" hashType="noslash">

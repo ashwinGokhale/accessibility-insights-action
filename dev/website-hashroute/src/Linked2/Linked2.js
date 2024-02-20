@@ -4,6 +4,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
+// Linked2 component having no accessibility failures, used to hash navigate to home page.
 const Linked2 = () => {
     return (
         <div>
